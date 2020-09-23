@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+    
+}
+
+body {
+    
+
+width: 100%;
+    
+height: 100%;
+    
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+    
+clear: both;
+}
+
+
+/*-- STYLE HEADER --*/ 
+
+
+.bg-img {
+    background-color: #1F082F;
+    background: url(../images/rectangle.svg) repeat-x;
+    background-size: cover;
+    width: 100%;
+    height: 95%;
+}
+
+.container {
+
+position: relative;
+
+
+height: 100%;
+
+max-width: 1440px;
+
+margin: 0 auto;
+}
+
+.dhi {
+    position: absolute;
+    width: 1068.28px;
+    height: 100%;
+    right: 0;
+    top: -42.24px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0; 
+    width: 100%;
+} 
+
+#footer > img {
+    width: 100%;
+}
+
+
+
+.logo img {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    width: 11%;
+    
+}
+
+
+/*----------Navegação----------*/
+
+
+a:link, a:active, a:visited {
+    color: white;
+    display: inline;
+}
+
+a:hover {
+    color: rgb(212, 6, 92);
+    transition: ease 0.6s;
+}
+
+
+
+nav {
+    
+background: none;
+    
+position: absolute;
+    
+right: 0;
+    
+top: 27.64px;
+    
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+font-size: 15px;
+}
+
+nav ul {
+
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a:link {
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+}
+
+
+a:hover {
+    transition: ease 0.6s;
+}
+/* ------ PARAGRAPH ---------*/ 
+
+
+.life {
+    position: absolute;
+    height: 100%;
+    left: 255px;
+    top: 28%;
+    color: rgb(255, 102, 161);
+    font-family: fantasy;
+    font-size: 20px;
+
+    
+}
+
+.paragraph p {
+    position: absolute;
+    height: 100%;
+    left: 250px;
+    top: 32%;
+    font-family: 'MinhaFonte', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 25px;
+    line-height: 136%;
+    text-align: left;
+} 
+
+/* --------------------BUTTON---------------------- */
+
+.buttons a {
+    position: absolute;
+    
+    
+    top: 48%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 60px;
+    text-align: left;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 0 56px;
+   }
+
+   .buttons a img {
+        width: 31px;
+        position: absolute;
+        right: 30px;
+        bottom: 17px;
+   }
+
+   .button {
+        position: absolute;
+        left: 38px;
+        font-size: 28px;
+   }
+
+  .button:hover {
+       
+    animation: animate 8s linear infinite;
+   }
+   @keyframes animate {
+    0% {
+     background-position: 0%;
+    }
+    100% {
+     background-position: 400%;
+    }
+
+   }
+  .button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+   }
+  .button:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+    
+   }
+
+
+   /* -------------- LATERAL MENU ----------------*/
+
+   #menu-lateral {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    z-index: 99;
+
+}
+
+ #menu-lateral ul {
+     list-style-type: none;
+ }
+
+ #menu-lateral ul li {
+     margin: 10px 0;
+ }
+
+ .lines { 
+     position: absolute;
+     width: auto;
+     top: 140px;
+     margin-left: 10px;
+ }
+    
+
+
+/* BIOGRAFIA */ 
+
+.container-bio {
+    position: relative;
+    height: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+.bio-pic {
+    position: absolute;
+    height: 75%;
+    top: 5%;
+}
+
+.biograph  {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    right: 0;
+    top: 18%;
+    left: 50%;
+    font-family: 'MinhaFonte2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #320e4b;
+    font-size: 30px;
+    line-height: 110%;
+    text-align: left;
+    text-indent: 40px;
+}
+
+
+    @font-face {
+        font-family: MinhaFonte;
+        src: url(../fonts/Mitr-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: MinhaFonte2;
+        src: url(../fonts/Grandstander-Italic-VariableFont_wght.ttf);
+    }
+
+
+    /*------FOOTER-------*/
+
+    footer {
+        background: #320e4b;
+        width: 100%;
+        height: 100px;
+    }
+
+    footer img {
+        width: 8%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Copyright {
+        display: block;
+        text-align: center;
+        background: #1e092c;
+        padding: 10px;
+        color: white;
+    }
+    
+    .Copyright a {
+        text-decoration: none;
+    }
